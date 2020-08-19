@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace solutionWithoutUsingInterface.Entities
+namespace Entities
 {
     class Invoice
     {
@@ -19,12 +19,12 @@ namespace solutionWithoutUsingInterface.Entities
         }
         public override string ToString()
         {
-            return "Basic Payment"
+            return "Basic Payment: "
                     + BasicPayment.ToString("F2", CultureInfo.InvariantCulture)
                     + "\nTax: "
                     + Tax.ToString("F2", CultureInfo.InvariantCulture)
                     + "\nTotal Payment: "
-                    + TotalPayment.ToString("F2", CultureInfo.InvariantCulture)
+                    + TotalPayment.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
