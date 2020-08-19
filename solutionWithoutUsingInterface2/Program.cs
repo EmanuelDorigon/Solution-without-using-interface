@@ -24,7 +24,7 @@ namespace solutionWithoutUsingInterface2
 
             CarRental carRental = new CarRental(start, finish, new Vehicle(model));
 
-            RentalServices rentalServices = new RentalServices(hour, day);
+            RentalServices rentalServices = new RentalServices(hour, day, new BrazilTaxServices());
 
             rentalServices.ProcessInvice(carRental);
             Console.WriteLine();
